@@ -131,7 +131,7 @@ export const useForm = (props: UseFormProps) => {
                             "Select": SelectInput,
                             "Checkbox": CheckboxInput
                         }[action.payload.type as string] as React.FC,
-                        validation: (v: any) => v ? undefined : 'Required'
+                        validation: (v: any) => v !== '' ? undefined : 'Required'
                     }
                 ]
             case FieldConfigActions.deleteFormItem:

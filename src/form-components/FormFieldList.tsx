@@ -46,6 +46,7 @@ export const FormFieldList: React.FC<FormFieldListProps> = props => {
             {!submitted ? null : (
                 <div className='submit-result'>
                     <div>Form successfully submitted!</div>
+                    <br />
                     {submitted.map((line, index) => (
                         <div key={index}>{line}</div>
                     ))}

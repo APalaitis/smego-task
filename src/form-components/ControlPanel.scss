@@ -1,0 +1,32 @@
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    border: 1px #aaaaaa solid;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    flex-basis: 30%;
+    margin-left: 1rem;
+
+    pre {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+
+    .error-message {
+        color: red;
+        font-weight: bold;
+        align-self: center;
+    }
+
+    input[type="text"], select {
+        width: 100%;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        align-self: center;
+        margin: 1rem 0;
+    }
+}

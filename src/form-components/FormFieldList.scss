@@ -1,0 +1,86 @@
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    border: 1px #aaaaaa solid;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    flex-basis: 40%;
+
+    > button {
+        width: 100px;
+        height: 40px;
+        align-self: center;
+        margin: 1rem 0;
+    }
+}
+
+.form-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+
+    label {
+        font-weight: bold;
+        color: #444444;
+    }
+
+    .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+
+        label {
+            font-weight: normal;
+            color: black;
+        }
+    }
+
+    &-children {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .error-message {
+        color: red;
+    }
+
+    &.error {
+        .input {
+            border-color: red;
+        }
+    }
+}
+
+input.input {
+    &[type="text"], &[type="number"] {
+        height: 2rem;
+        width: 80%;
+        padding: 0 0.5rem;
+        margin: 0.2rem 0;
+        border: 1px #aaaaaa solid;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    &[type="checkbox"] {
+        margin-right: 0.8rem;
+        margin-left: 0;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+select.input {
+    height: 2rem;
+    width: 80%;
+    padding: 0 0.5rem;
+    margin: 0.2rem 0;
+    border-color: #aaaaaa;
+    border-radius: 10px;
+}
+
+.submit-result {
+    margin-top: 1rem;
+    color: green;
+}
